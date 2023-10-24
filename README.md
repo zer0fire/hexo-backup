@@ -56,3 +56,8 @@ Global Options:
 For more help, you can use 'hexo help [command]' for the detailed information
 or you can check the docs: http://hexo.io/docs/
 ```
+
+custom page
+```yaml
+skip_render: demo/**
+```
