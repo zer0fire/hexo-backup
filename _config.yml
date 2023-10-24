@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: zer0fire
 subtitle: ''
-description: ''
+description: 'To be or not to be, it is a question'
 keywords:
-author: John Doe
+author: AlexWang
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://blog.zer0fire.me
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -97,9 +97,12 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repo: 'git@github.com:zer0fire/zer0fire.github.io.git'
+  branch: "main"
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"

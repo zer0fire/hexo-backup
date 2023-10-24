@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   hexo: ^6.3.0
+  hexo-deployer-git: ^4.0.0
   hexo-generator-archive: ^2.0.0
   hexo-generator-category: ^2.0.0
   hexo-generator-index: ^3.0.0
@@ -10,10 +11,12 @@ specifiers:
   hexo-renderer-marked: ^6.0.0
   hexo-renderer-stylus: ^3.0.0
   hexo-server: ^3.0.0
+  hexo-theme-fluid: ^1.9.5-a
   hexo-theme-landscape: ^1.0.0
 
 dependencies:
   hexo: 6.3.0
+  hexo-deployer-git: 4.0.0
   hexo-generator-archive: 2.0.0
   hexo-generator-category: 2.0.0
   hexo-generator-index: 3.0.0
@@ -22,6 +25,7 @@ dependencies:
   hexo-renderer-marked: 6.1.1
   hexo-renderer-stylus: 3.0.0
   hexo-server: 3.0.0
+  hexo-theme-fluid: 1.9.5-a
   hexo-theme-landscape: 1.0.0
 
 packages:
@@ -598,6 +602,20 @@ packages:
       tildify: 2.0.0
     dev: false
 
+  /hexo-deployer-git/4.0.0:
+    resolution: {integrity: sha512-28t1Q+4taB/UaBAP52W3mD/wcCwa2y2zBieUfBJFBZudbmVgiKJB5YedYILeyI5QByaUKAOwoupmdTbocdQ+CQ==}
+    engines: {node: '>=14'}
+    dependencies:
+      bluebird: 3.7.2
+      hexo-fs: 4.1.1
+      hexo-util: 2.7.0
+      luxon: 3.4.3
+      nunjucks: 3.2.4
+      picocolors: 1.0.0
+    transitivePeerDependencies:
+      - chokidar
+    dev: false
+
   /hexo-front-matter/3.0.0:
     resolution: {integrity: sha512-hSQTPUmB/BCe1BFYmXRkPyLk8rqbBqHCQq+rjwwOJuEfOADrFaVK2VPZb90tJzPyXE1xSxpgCxE/AZq0CyTVwg==}
     engines: {node: '>=12.13.0'}
@@ -725,6 +743,13 @@ packages:
       serve-static: 1.15.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /hexo-theme-fluid/1.9.5-a:
+    resolution: {integrity: sha512-lmpLUtYfEDTFoOAuhZ8wNPzfS8DU9Kbck/JGvpPBWkss2xSNddgRGxpJEpAAdD2ikUf3KI5sehOPMBfk9yVDfQ==}
+    engines: {node: '>=8.10.0'}
+    peerDependencies:
+      nunjucks: ^3.0.0
     dev: false
 
   /hexo-theme-landscape/1.0.0:
@@ -1005,6 +1030,11 @@ packages:
     resolution: {integrity: sha1-b6I3xj29xKgsoP2ILkci3F5jTig=}
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  /luxon/3.4.3:
+    resolution: {integrity: sha512-tFWBiv3h7z+T/tDaoxA8rqTxy1CHV6gHS//QdaH4pulbq/JuBSGgQspQQqcgnwdAx6pNI7cmvz5Sv/addzHmUg==}
+    engines: {node: '>=12'}
     dev: false
 
   /marked/4.3.0:
