@@ -1,3 +1,5 @@
+`skip_render` config, if you want to update this config, you need delete the `db.json`
+
 ```shell
 $ hexo --version
 INFO  Validating config
@@ -58,6 +60,7 @@ or you can check the docs: http://hexo.io/docs/
 ```
 
 custom page
+
 ```yaml
 skip_render: demo/**
 ```
