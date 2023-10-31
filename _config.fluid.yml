@@ -1,0 +1,6 @@
+index:
+  slogan:
+    enable: true,
+    text: To be, or not to be, it is a question
+navbar:
+  blog_title: "zer0fire"
