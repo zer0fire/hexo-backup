@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EnglishResume.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="wangmeng">WangMeng</h2>
+<ul>
+<li>Age: 27</li>
+<li>Education: InnerMongolia University of Technology, Major Internet of Things</li>
+<li>Contact: 18447073846; Email: hai@zer0fire.me</li>
+</ul>
+<br/>
+<h4 id="work-experience">WORK EXPERIENCE</h4>
+<br/>
+<ul>
+<li>
+<p>2021.11 - Current, Spark Education Group,Front-end Developer</p>
+<ul>
+<li>
+<p>Job Duties: Responsible for the development of GameFactory platform and operation background. The main technology stack used is <code>React</code>、 <code>Ant Design</code>、 and <code>Redux-toolkit</code>. In addition, I was also responsible for the development of course-ware based <code>Cocos</code> game engine, and the main technology stack was the self-developed framework of <code>Cocos</code> combine <code>Redux</code></p>
+</li>
+<li>
+<p>【 Project name 】<strong>Game Dreamworks Platform</strong><br/></p>
+</li>
+<li>
+<p>【 Project Description 】</p>
+</li>
+</ul>
+<ol>
+<li>The platform was built and developed using the <code>UmiJS</code> framework, the state management uses the <code>UmiJS</code> internal function <code>useModel</code> and <code>Redux-toolkit</code>, and <code>Ant Design</code> 3.x is used as the UI library.</li>
+<li>Participated in project construction and page development, and accessed <code>SentryJS</code> to monitor the quality of the page, reducing the amount of bugs by 90%, and reducing the time to locate the bugs. Developed <code>Cocos</code> + <code>Redux</code> self-developed courseware materials, participated in the production of chess courseware, through the optimization of component generation and node generation, reduced the size of the request state size of about 24KB.</li>
+</ol>
+<ul>
+<li>
+<p>【 Project name 】<strong>Game Factory Platform</strong><br/></p>
+</li>
+<li>
+<p>【 Project Description 】<br/></p>
+</li>
+</ul>
+<ol>
+<li>Mainly for course-ware making supporting platform development, combined with the function of <code>Cocos</code>, using <code>React</code> and <code>Redux</code>. Through the reduce the component and batch processing code file, reduce code file size about 12KB <br/></li>
+<li>Mainly uses <code>NestJS</code> as back-end application, uses <code>Mysql</code> to store data.<br/></li>
+<li>The main function is to provide visual interface for the executive planner and other users in client, such as quick assembly of default <code>Prefab</code> resources, automatic resource completion, resource search in <code>PreFab</code>, quick image conversion, multi-terminal synchronous detection, etc<br/></li>
+</ol>
+</li>
+</ul>
+<br/>
+<ul>
+<li>
+<p>2019.06 - 2020.10, Beijing Hank-Times Group, Front-end Developer</p>
+<ul>
+<li>
+<p>Job Duties: Responsible for enterprise background application development, webpage operation background development, user activity application page development. The main technology stack used is <code>React</code> + <code>Umi</code> + <code>Ant Design</code>/<code>Fusion Design</code></p>
+</li>
+<li>
+<p>【 Project name 】<strong>Alita Management Platform</strong><br/></p>
+</li>
+<li>
+<p>【 Project Description 】<br/></p>
+</li>
+</ul>
+<ol>
+<li>Mainly develops the front-end pages of the backstage than used by enterprise commodity marketing activities。<br/></li>
+<li>Use <code>React</code> + <code>Umi</code> to build page, use <code>Ant Design</code> as UI library, use Axios as fetch library, it's a multi-page application.<br/></li>
+<li>The main function is to create and query marketing activities, detailed records of the main marketing activity information and key copywriting, in front of the user page can be based on this to display activity information; Through the background organization activity page, will meet the requirements of the activity of the commodity circle selected; Statistics and mining of user registration activities and input commodities; Delineate the users of both buyers and sellers, conduct targeted marketing services and bundle activities, etc.<br/></li>
+<li>Use img tag new feature to make it lazy loading, use SessionStorage store the behavior of the user's options within the page. <br/></li>
+</ol>
+  <br/>
+  <br/>
+</li>
+</ul>
+<h4 id="technical-skills">TECHNICAL SKILLS</h4>
+<ul>
+<li>Langs: JavaScript / TypeScript.</li>
+<li>Mastered: React Ecosystem(like React, Redux etc.), HTML, CSS.</li>
+<li>Experienced on JavaScript Closure, High-Level Function, Async/Await, DOM, BOM, Node.js.</li>
+<li>Experienced on React libraries, such as UmiJS, Ant-Design, Fusion-Design.</li>
+<li>Experienced on HTML Tags, Property and Semantics, and CSS per-compiled language like Sass, Less.</li>
+<li>Familiar with Fronted, understand about basic Web Security (XSS, SQL injection, CSRF, CSP), HTTP protocol.</li>
+<li>Familiar with Team Management: Git, JIRA.</li>
+<li>book list: <The Book of CSS3>, <Professional JavaScript for Web Developers>, &lt;Refactoring: Improving Design of Existing Code&gt;.</li>
+<li>Complete more then 200 leetcode problem.</li>
+</ul>
+
+</body>
+</html>
