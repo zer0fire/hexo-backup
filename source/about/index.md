@@ -4,4 +4,4 @@ layout: about
 date: 2023-10-31 22:15:26
 ---
 
-About me: I'm Wang Meng, English name is Alex Wang
+I'm Wang Meng, English name is Alex Wang
