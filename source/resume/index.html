@@ -1,551 +1,282 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>EnglishResume.md</title>
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王猛-前端</title>
     <style>
-      /* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
-      /*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
-      body {
-        font-family: var(
-          --vscode-markdown-font-family,
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe WPC",
-          "Segoe UI",
-          "Ubuntu",
-          "Droid Sans",
-          sans-serif
-        );
-        font-size: var(--vscode-markdown-font-size, 14px);
-        padding: 0 26px;
-        line-height: var(--vscode-markdown-line-height, 22px);
-        word-wrap: break-word;
-      }
-
-      #code-csp-warning {
-        position: fixed;
-        top: 0;
-        right: 0;
-        color: white;
-        margin: 16px;
-        text-align: center;
-        font-size: 12px;
-        font-family: sans-serif;
-        background-color: #444444;
-        cursor: pointer;
-        padding: 6px;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-      }
-
-      #code-csp-warning:hover {
-        text-decoration: none;
-        background-color: #007acc;
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-      }
-
-      body.scrollBeyondLastLine {
-        margin-bottom: calc(100vh - 22px);
-      }
-
-      body.showEditorSelection .code-line {
-        position: relative;
-      }
-
-      body.showEditorSelection .code-active-line:before,
-      body.showEditorSelection .code-line:hover:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: -12px;
-        height: 100%;
-      }
-
-      body.showEditorSelection li.code-active-line:before,
-      body.showEditorSelection li.code-line:hover:before {
-        left: -30px;
-      }
-
-      .vscode-light.showEditorSelection .code-active-line:before {
-        border-left: 3px solid rgba(0, 0, 0, 0.15);
-      }
-
-      .vscode-light.showEditorSelection .code-line:hover:before {
-        border-left: 3px solid rgba(0, 0, 0, 0.4);
-      }
-
-      .vscode-light.showEditorSelection .code-line .code-line:hover:before {
-        border-left: none;
-      }
-
-      .vscode-dark.showEditorSelection .code-active-line:before {
-        border-left: 3px solid rgba(255, 255, 255, 0.4);
-      }
-
-      .vscode-dark.showEditorSelection .code-line:hover:before {
-        border-left: 3px solid rgba(255, 255, 255, 0.6);
-      }
-
-      .vscode-dark.showEditorSelection .code-line .code-line:hover:before {
-        border-left: none;
-      }
-
-      .vscode-high-contrast.showEditorSelection .code-active-line:before {
-        border-left: 3px solid rgba(255, 160, 0, 0.7);
-      }
-
-      .vscode-high-contrast.showEditorSelection .code-line:hover:before {
-        border-left: 3px solid rgba(255, 160, 0, 1);
-      }
-
-      .vscode-high-contrast.showEditorSelection
-        .code-line
-        .code-line:hover:before {
-        border-left: none;
-      }
-
-      img {
-        max-width: 100%;
-        max-height: 100%;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      a:focus,
-      input:focus,
-      select:focus,
-      textarea:focus {
-        outline: 1px solid -webkit-focus-ring-color;
-        outline-offset: -1px;
-      }
-
-      hr {
-        border: 0;
-        height: 2px;
-        border-bottom: 2px solid;
-      }
-
-      h1 {
-        padding-bottom: 0.3em;
-        line-height: 1.2;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-      }
-
+      body,
       h1,
       h2,
       h3 {
-        font-weight: normal;
+        margin: 0;
       }
-
-      table {
-        border-collapse: collapse;
-      }
-
-      table > thead > tr > th {
-        text-align: left;
-        border-bottom: 1px solid;
-      }
-
-      table > thead > tr > th,
-      table > thead > tr > td,
-      table > tbody > tr > th,
-      table > tbody > tr > td {
-        padding: 5px 10px;
-      }
-
-      table > tbody > tr + tr > td {
-        border-top: 1px solid;
-      }
-
-      blockquote {
-        margin: 0 7px 0 5px;
-        padding: 0 16px 0 10px;
-        border-left-width: 5px;
-        border-left-style: solid;
-      }
-
       code {
-        font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New",
-          monospace, "Droid Sans Fallback";
-        font-size: 1em;
-        line-height: 1.357em;
+        background-color: #ddd;
+        border-radius: 4px;
+        padding: 5px 2px 2px 2px;
       }
-
-      body.wordWrap pre {
-        white-space: pre-wrap;
-      }
-
-      pre:not(.hljs),
-      pre.hljs code > div {
-        padding: 16px;
-        border-radius: 3px;
-        overflow: auto;
-      }
-
-      pre code {
-        color: var(--vscode-editor-foreground);
-        tab-size: 4;
-      }
-
-      /** Theming */
-
-      .vscode-light pre {
-        background-color: rgba(220, 220, 220, 0.4);
-      }
-
-      .vscode-dark pre {
-        background-color: rgba(10, 10, 10, 0.4);
-      }
-
-      .vscode-high-contrast pre {
-        background-color: rgb(0, 0, 0);
-      }
-
-      .vscode-high-contrast h1 {
-        border-color: rgb(0, 0, 0);
-      }
-
-      .vscode-light table > thead > tr > th {
-        border-color: rgba(0, 0, 0, 0.69);
-      }
-
-      .vscode-dark table > thead > tr > th {
-        border-color: rgba(255, 255, 255, 0.69);
-      }
-
-      .vscode-light h1,
-      .vscode-light hr,
-      .vscode-light table > tbody > tr + tr > td {
-        border-color: rgba(0, 0, 0, 0.18);
-      }
-
-      .vscode-dark h1,
-      .vscode-dark hr,
-      .vscode-dark table > tbody > tr + tr > td {
-        border-color: rgba(255, 255, 255, 0.18);
-      }
-    </style>
-
-    <style>
-      /* Tomorrow Theme */
-      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-      /* Tomorrow Comment */
-      .hljs-comment,
-      .hljs-quote {
-        color: #8e908c;
-      }
-
-      /* Tomorrow Red */
-      .hljs-variable,
-      .hljs-template-variable,
-      .hljs-tag,
-      .hljs-name,
-      .hljs-selector-id,
-      .hljs-selector-class,
-      .hljs-regexp,
-      .hljs-deletion {
-        color: #c82829;
-      }
-
-      /* Tomorrow Orange */
-      .hljs-number,
-      .hljs-built_in,
-      .hljs-builtin-name,
-      .hljs-literal,
-      .hljs-type,
-      .hljs-params,
-      .hljs-meta,
-      .hljs-link {
-        color: #f5871f;
-      }
-
-      /* Tomorrow Yellow */
-      .hljs-attribute {
-        color: #eab700;
-      }
-
-      /* Tomorrow Green */
-      .hljs-string,
-      .hljs-symbol,
-      .hljs-bullet,
-      .hljs-addition {
-        color: #718c00;
-      }
-
-      /* Tomorrow Blue */
-      .hljs-title,
-      .hljs-section {
-        color: #4271ae;
-      }
-
-      /* Tomorrow Purple */
-      .hljs-keyword,
-      .hljs-selector-tag {
-        color: #8959a8;
-      }
-
-      .hljs {
-        display: block;
-        overflow-x: auto;
-        color: #4d4d4c;
-        padding: 0.5em;
-      }
-
-      .hljs-emphasis {
-        font-style: italic;
-      }
-
-      .hljs-strong {
-        font-weight: bold;
-      }
-    </style>
-
-    <style>
-      /*
- * Markdown PDF CSS
- */
-
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
-          "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
-        padding: 0 12px;
+        padding: 10px;
       }
-
-      pre {
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
-        border-radius: 3px;
-        overflow-x: auto;
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
+      header h1 {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 3px;
       }
-
-      pre:not(.hljs) {
-        padding: 23px;
-        line-height: 19px;
+      header h2 {
+        text-align: center;
+        font-size: 16px;
       }
-
-      blockquote {
-        background: rgba(127, 127, 127, 0.1);
-        border-color: rgba(0, 122, 204, 0.5);
+      header {
+        margin: 0px 0px 15px 0px;
       }
-
-      .emoji {
-        height: 1.4em;
+      aside,
+      section,
+      main {
+        margin-bottom: 15px;
       }
-
-      code {
+      aside h1,
+      section h1,
+      main h1,
+      footer h1 {
+        margin-bottom: 10px;
+      }
+      aside h1 {
+        border-left: 10px solid grey;
+        background: #eee;
+        padding: 2px 0px 2px 10px;
+        font-size: 18px;
+      }
+      aside div.item {
+        display: list-item;
+        margin-left: 30px;
+        font-size: 15px;
+      }
+      section h1 {
+        border-left: 10px solid grey;
+        background: #eee;
+        padding: 2px 0px 2px 10px;
+        font-size: 16px;
+      }
+      section h2,
+      section h3 {
         font-size: 14px;
-        line-height: 19px;
       }
-
-      /* for inline code */
-      :not(pre):not(.hljs) > code {
-        color: #c9ae75; /* Change the old color so it seems less like an error */
-        font-size: inherit;
+      section .container {
+        display: flex;
+        justify-content: space-between;
       }
-
-      /* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-      .page {
-        page-break-after: always;
+      section div {
+        margin-bottom: 5px;
+        font-size: 15px;
+      }
+      main h1 {
+        border-left: 10px solid grey;
+        background: #eee;
+        padding: 2px 0px 2px 10px;
+        font-size: 20px;
+      }
+      main .project h2 {
+        font-size: 20px;
+        margin: 10px 0px 5px 0px;
+      }
+      main .project h3 {
+        font-size: 18px;
+        margin: 5px;
+      }
+      main .project .description {
+        display: list-item;
+        margin-left: 30px;
+        font-size: 15px;
+      }
+      footer h1 {
+        border-left: 10px solid grey;
+        background: #eee;
+        padding: 2px 0px 2px 10px;
+        font-size: 20px;
+      }
+      footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 15px;
       }
     </style>
-
-    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
   </head>
   <body>
-    <script>
-      mermaid.initialize({
-        startOnLoad: true,
-        theme:
-          document.body.classList.contains("vscode-dark") ||
-          document.body.classList.contains("vscode-high-contrast")
-            ? "dark"
-            : "default",
-      });
-    </script>
-    <h2 id="wangmeng">WangMeng</h2>
-    <ul>
-      <li>Age: 27</li>
-      <li>
-        Education: InnerMongolia University of Technology, Major Internet of
-        Things
-      </li>
-      <li>Contact: 18447073846; Email: hai@zer0fire.me</li>
-    </ul>
-    <br />
-    <h4 id="work-experience">WORK EXPERIENCE</h4>
-    <br />
-    <ul>
-      <li>
-        <p>2021.11 - Current, Spark Education Group,Front-end Developer</p>
-        <ul>
-          <li>
-            <p>
-              Job Duties: Responsible for the development of GameFactory
-              platform and operation background. The main technology stack used
-              is <code>React</code>、 <code>Ant Design</code>、 and
-              <code>Redux-toolkit</code>. In addition, I was also responsible
-              for the development of course-ware based <code>Cocos</code> game
-              engine, and the main technology stack was the self-developed
-              framework of <code>Cocos</code> combine <code>Redux</code>
-            </p>
-          </li>
-          <li>
-            <p>
-              【 Project name 】<strong>Game Dreamworks Platform</strong><br />
-            </p>
-          </li>
-          <li>
-            <p>【 Project Description 】</p>
-          </li>
-        </ul>
-        <ol>
-          <li>
-            The platform was built and developed using the
-            <code>UmiJS</code> framework, the state management uses the
-            <code>UmiJS</code> internal function <code>useModel</code> and
-            <code>Redux-toolkit</code>, and <code>Ant Design</code> 3.x is used
-            as the UI library.
-          </li>
-          <li>
-            Participated in project construction and page development, and
-            accessed <code>SentryJS</code> to monitor the quality of the page,
-            reducing the amount of bugs by 90%, and reducing the time to locate
-            the bugs. Developed <code>Cocos</code> +
-            <code>Redux</code> self-developed courseware materials, participated
-            in the production of chess courseware, through the optimization of
-            component generation and node generation, reduced the size of the
-            request state size of about 24KB.
-          </li>
-        </ol>
-        <ul>
-          <li>
-            <p>
-              【 Project name 】<strong>Game Factory Platform</strong><br />
-            </p>
-          </li>
-          <li>
-            <p>【 Project Description 】<br /></p>
-          </li>
-        </ul>
-        <ol>
-          <li>
-            Mainly for course-ware making supporting platform development,
-            combined with the function of <code>Cocos</code>, using
-            <code>React</code> and <code>Redux</code>. Through the reduce the
-            component and batch processing code file, reduce code file size
-            about 12KB <br />
-          </li>
-          <li>
-            Mainly uses <code>NestJS</code> as back-end application, uses
-            <code>Mysql</code> to store data.<br />
-          </li>
-          <li>
-            The main function is to provide visual interface for the executive
-            planner and other users in client, such as quick assembly of default
-            <code>Prefab</code> resources, automatic resource completion,
-            resource search in <code>PreFab</code>, quick image conversion,
-            multi-terminal synchronous detection, etc<br />
-          </li>
-        </ol>
-      </li>
-    </ul>
-    <br />
-    <ul>
-      <li>
-        <p>2019.06 - 2020.10, Beijing Hank-Times Group, Front-end Developer</p>
-        <ul>
-          <li>
-            <p>
-              Job Duties: Responsible for enterprise background application
-              development, webpage operation background development, user
-              activity application page development. The main technology stack
-              used is <code>React</code> + <code>Umi</code> +
-              <code>Ant Design</code>/<code>Fusion Design</code>
-            </p>
-          </li>
-          <li>
-            <p>
-              【 Project name 】<strong>Alita Management Platform</strong><br />
-            </p>
-          </li>
-          <li>
-            <p>【 Project Description 】<br /></p>
-          </li>
-        </ul>
-        <ol>
-          <li>
-            Mainly develops the front-end pages of the backstage than used by
-            enterprise commodity marketing activities。<br />
-          </li>
-          <li>
-            Use <code>React</code> + <code>Umi</code> to build page, use
-            <code>Ant Design</code> as UI library, use Axios as fetch library,
-            it's a multi-page application.<br />
-          </li>
-          <li>
-            The main function is to create and query marketing activities,
-            detailed records of the main marketing activity information and key
-            copywriting, in front of the user page can be based on this to
-            display activity information; Through the background organization
-            activity page, will meet the requirements of the activity of the
-            commodity circle selected; Statistics and mining of user
-            registration activities and input commodities; Delineate the users
-            of both buyers and sellers, conduct targeted marketing services and
-            bundle activities, etc.<br />
-          </li>
-          <li>
-            Use img tag new feature to make it lazy loading, use SessionStorage
-            store the behavior of the user's options within the page. <br />
-          </li>
-        </ol>
-        <br />
-        <br />
-      </li>
-    </ul>
-    <h4 id="technical-skills">TECHNICAL SKILLS</h4>
-    <ul>
-      <li>Langs: JavaScript / TypeScript.</li>
-      <li>Mastered: React Ecosystem(like React, Redux etc.), HTML, CSS.</li>
-      <li>
-        Experienced on JavaScript Closure, High-Level Function, Async/Await,
-        DOM, BOM, Node.js.
-      </li>
-      <li>
-        Experienced on React libraries, such as UmiJS, Ant-Design,
-        Fusion-Design.
-      </li>
-      <li>
-        Experienced on HTML Tags, Property and Semantics, and CSS per-compiled
-        language like Sass, Less.
-      </li>
-      <li>
-        Familiar with Fronted, understand about basic Web Security (XSS, SQL
-        injection, CSRF, CSP), HTTP protocol.
-      </li>
-      <li>Familiar with Team Management: Git, JIRA.</li>
-      <li>
-        book list: &lt;The Book of CSS3&gt;, &lt;Professional JavaScript for Web
-        Developers&gt;, &lt;Refactoring: Improving Design of Existing Code&gt;.
-      </li>
-      <li>Complete more then 200 leetcode problem.</li>
-    </ul>
+    <header>
+      <h1>王猛</h1>
+      <h2>18447073846 | hai@zer0fire.me | 成都</h2>
+      <h2>前端开发工程师</h2>
+    </header>
+    <aside class="ability">
+      <h1>专业技能</h1>
+      <div class="container">
+        <div class="item">
+          熟悉原生 JavaScript，理解原型、闭包、高阶、异步等概念，熟悉 ES
+          新特性， 熟悉使用 TypeScript 编写程序，了解其基本语法和常用类型约束
+        </div>
+        <div class="item">
+          熟悉 React 的使用，了解生命周期函数和 Hooks 等概念，了解 Redux 和
+          React-Router
+        </div>
+        <div class="item">
+          熟悉使用 Git 协同开发；熟悉使用 ESLint 和 Prettier 代码规范
+        </div>
+        <div class="item">熟悉 Sass、Babel 提示编码效率，减少项目维护成本</div>
+        <div class="item">掌握响应式布局、弹性布局、百分比自适应布局</div>
+        <div class="item">
+          熟悉 HTTP 协议的机制、常见请求头等，熟悉常见的浏览器资源缓存策略
+        </div>
+      </div>
+    </aside>
+    <section class="experience">
+      <h1>工作经历</h1>
+      <div class="container">
+        <h2>火花思维教育科技有限公司</h2>
+        <h3>2020.11 - 至今</h3>
+      </div>
+      <div>前端开发工程师 VS课件及平台研发部</div>
+      <div class="container">
+        <h2>北京汉克时代科技有限公司</h2>
+        <h3>2019.05 - 2020.10</h3>
+      </div>
+      <div>前端开发工程师 电商平台研发部</div>
+      <div class="container">
+        <h2>内蒙古云科数据有限公司</h2>
+        <h3>2018.05 - 2019.04</h3>
+      </div>
+      <div>前端开发工程师 研发部</div>
+    </section>
+    <main>
+      <h1>项目经历</h1>
+      <div class="project">
+        <h2>游戏梦工厂平台</h2>
+        <h3>项目描述：</h3>
+        <div class="description">
+          该项目是开发课件游戏的低代码开发平台，让教学老师能通过简单的拖拉拽对现有的模版模块进行二次开发，快速拼装课件
+        </div>
+        <h3>技术栈：</h3>
+        <div class="description">
+          使用 React 开发， UI 框架使用 Ant Design，使用 redux-toolkit
+          作为状态管理工具，使用 Cocos 作为可视层进行基础拖拉拽处理
+        </div>
+        <h3>负责内容：</h3>
+        <div class="description">参与低代码项目页面开发</div>
+        <div class="description">满足业务方需求，基础拖拽组件库开发</div>
+        <div class="description">
+          负责低代码模块模板开发，交付给教研老师进行二次开发
+        </div>
+        <div class="description">接入 sentry 监控前端页面质量</div>
+        <h3>项目难点：</h3>
+        <div class="description">
+          把 Cocos 引擎嵌入到 Web 页面，并使用自定义物料库进行搭建
+        </div>
+        <div class="description">拖拽库的应用及对拖拽库的自定义二次开发</div>
+        <div class="description">如何接入 sentry 平台用来统计和报告 bug</div>
+        <div class="description">
+          如何接入数据埋点，统计模板模块物料使用频率
+        </div>
+        <h3>项目成果：</h3>
+        <div class="description">
+          参与将 Cocos 嵌入到浏览器中，让用户能够在网页中使用 Cocos
+          相关的引擎能力
+        </div>
+        <div class="description">
+          抽象出一套拖拽库，在公司低代码平台作为基建使用
+        </div>
+        <div class="description">减少 BUG 量 90% ，减少定位 BUG 时间</div>
+      </div>
+      <div class="project">
+        <h2>GameFactory ⼯具平台</h2>
+        <h3>项目描述：</h3>
+        <div class="description">
+          给策划团队进⾏课件制作配套⼯具平台，配套 Cocos
+          游戏引擎进行使用，有一系列配合拼装搭建的工具
+        </div>
+        <h3>技术栈：</h3>
+        <div class="description">
+          使用 React 和 Ant Design 开发页面，使用 Cocos Plugin 和 Electron 接口
+        </div>
+        <h3>负责内容：</h3>
+        <div class="description">开发 Cocos 插件工具，及对应的平台页面</div>
+        <div class="description">
+          参与对 Cocos 编辑器的扩展，接入前端工具平台、模块模板平台
+        </div>
+        <div class="description">
+          开发插件对应的发布工具及脚手架，并设法接入团队内开发的其他工具，推广脚手架的使用
+        </div>
+        <h3>项目难点：</h3>
+        <div class="description">
+          Cocos 内部 Plugin 无法引入前端项目，无法使用 npm 和其他库或者框架
+        </div>
+        <div class="description">
+          Electron 和 Cocos Editor 的交互文档缺失，ipc 协议无法直接调试
+        </div>
+        <div class="description">
+          如何利用 Electron 和 Cocos 的 API 来收集本地资源内空引用
+        </div>
+        <div class="description">
+          如何完善脚手架功能，实现从模板到插件的快速迭代
+        </div>
+        <h3>项目成果：</h3>
+        <div class="description">
+          通过 iframe 的方式在 Cocos 插件中引入平台前端项目，可以通过 React +
+          Ant Design 进行开发，同时通过全局注入的方式保证可以使用 Cocos Plugin
+          API
+        </div>
+        <div class="description">
+          利用连通图算法对依赖进行收集，处理了部分空依赖，比如缺失引用的组件，未被引用的节点等
+        </div>
+        <div class="description">
+          将平台调试放到本地启动，可以在本地利用脚手架创建项目并调试
+        </div>
+      </div>
+      <div class="project">
+        <h2>Alita 活动管理平台</h2>
+        <h3>项目描述：</h3>
+        <div class="description">
+          主要提供给电商部门运营，用来创建商品营销活动的后台，有约百人 uv
+        </div>
+        <h3>技术栈：</h3>
+        <div class="description">
+          使用 React + dva 技术栈，使用了 Ant Design 作为前端 UI 组件库。使用
+          Axios 作为请求库
+        </div>
+        <h3>负责内容：</h3>
+        <div class="description">使用 JSON Schema 自定义渲染表格</div>
+        <div class="description">对自定义渲染的页面进行一定的性能优化</div>
+        <div class="description">
+          对用户上传文件进行管理，并传送到后端进行保存
+        </div>
+        <div class="description">
+          使用JWT 进行简单的跨域认证，让用户可以访问到非核心内容
+        </div>
+        <h3>项目难点：</h3>
+        <div class="description">JSON Schema 的自定义渲染，以及联动渲染</div>
+        <div class="description">表格内容渲染过多，拖慢加载速度和用户交互</div>
+        <div class="description">用户上传的文件过大，上传也容易中断</div>
+        <h3>项目成果：</h3>
+        <div class="description">
+          使用JSON Schema
+          完成了把后端数据直接渲染成对应表格的能力，联动渲染可以反查
+        </div>
+        <div class="description">
+          页面使用虚拟滚动优化页面性能，让渲染出的表单更快速打开
+        </div>
+        <div class="description">
+          实现了大文件上传，并且可以让大文件断点续传
+        </div>
+        <div class="description">提高页面加载效率，图片懒加载</div>
+      </div>
+    </main>
+    <footer>
+      <h1>教育经历</h1>
+      <div class="container">
+        <aside>内蒙古工业大学 物联网工程 本科 信息工程学院</aside>
+        <aside>2014.09 - 2018.07</aside>
+      </div>
+    </footer>
   </body>
 </html>
