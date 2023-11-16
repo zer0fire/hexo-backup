@@ -101,6 +101,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0px 15px;
+        font-size: 15px;
       }
     </style>
   </head>
@@ -124,11 +125,15 @@
         <div class="item">
           熟悉使用 Git 协同开发；熟悉使用 ESLint 和 Prettier 代码规范
         </div>
-        <div class="item">熟悉 Sass、Babel 提示编码效率，减少项目维护成本</div>
-        <div class="item">掌握响应式布局、弹性布局、百分比自适应布局</div>
         <div class="item">
-          熟悉 HTTP 协议的机制、常见请求头等，熟悉常见的浏览器资源缓存策略
+          熟悉 Sass、Less 及类似的 CSS 预处理器，熟悉 Babel
+          编译代码，减少项目维护成本
         </div>
+        <div class="item">
+          熟悉计算机网络的基本原理，熟悉 HTTP
+          协议的机制、常见请求头等，熟悉常见的浏览器资源缓存策略
+        </div>
+        <div class="item">掌握响应式布局、弹性布局、百分比自适应布局</div>
       </div>
     </aside>
     <section class="experience">
@@ -155,7 +160,7 @@
         <h2>游戏梦工厂平台</h2>
         <h3>项目描述：</h3>
         <div class="description">
-          该项目是开发课件游戏的低代码开发平台，让教学老师能通过简单的拖拉拽对现有的模版模块进行二次开发，快速拼装课件
+          该项目是开发课件游戏的低代码开发平台，让教学老师能通过简单的拖拉拽，对现有的课件游戏模版模块进行二次开发，快速拼装课件
         </div>
         <h3>技术栈：</h3>
         <div class="description">
@@ -164,20 +169,20 @@
         </div>
         <h3>负责内容：</h3>
         <div class="description">参与低代码项目页面开发</div>
-        <div class="description">满足业务方需求，基础拖拽组件库开发</div>
+        <div class="description">对基础拖拽组件库二次开发和功能拓展</div>
         <div class="description">
-          负责低代码模块模板开发，交付给教研老师进行二次开发
+          负责交付给教研老师的低代码模块、模板的开发
         </div>
         <div class="description">接入 sentry 监控前端页面质量</div>
         <h3>项目难点：</h3>
+        <div class="description">如何抽象拖拽库，以及对拖拽库的扩展开发</div>
         <div class="description">
-          把 Cocos 引擎嵌入到 Web 页面，并使用自定义物料库进行搭建
+          把 Cocos 引擎嵌入到 Web 页面，并接入自定义物料库
         </div>
-        <div class="description">拖拽库的应用及对拖拽库的自定义二次开发</div>
+        <div class="description">
+          如何接入数据埋点，统计模板模块等物料使用频率
+        </div>
         <div class="description">如何接入 sentry 平台用来统计和报告 bug</div>
-        <div class="description">
-          如何接入数据埋点，统计模板模块物料使用频率
-        </div>
         <h3>项目成果：</h3>
         <div class="description">
           参与将 Cocos 嵌入到浏览器中，让用户能够在网页中使用 Cocos
@@ -192,12 +197,13 @@
         <h2>GameFactory ⼯具平台</h2>
         <h3>项目描述：</h3>
         <div class="description">
-          给策划团队进⾏课件制作配套⼯具平台，配套 Cocos
-          游戏引擎进行使用，有一系列配合拼装搭建的工具
+          助力策划团队进行制作的配套⼯具平台，主要目的是方便开发 Cocos
+          游戏引擎的插件和接入其他工具平台
         </div>
         <h3>技术栈：</h3>
         <div class="description">
-          使用 React 和 Ant Design 开发页面，使用 Cocos Plugin 和 Electron 接口
+          使用 React 开发， UI 框架使用 Ant Design，使用 Cocos Plugin 和
+          Electron API
         </div>
         <h3>负责内容：</h3>
         <div class="description">开发 Cocos 插件工具，及对应的平台页面</div>
@@ -205,7 +211,7 @@
           参与对 Cocos 编辑器的扩展，接入前端工具平台、模块模板平台
         </div>
         <div class="description">
-          开发插件对应的发布工具及脚手架，并设法接入团队内开发的其他工具，推广脚手架的使用
+          开发插件对应的发布工具及脚手架，并接入团队内开发的其他工具
         </div>
         <h3>项目难点：</h3>
         <div class="description">
@@ -222,12 +228,14 @@
         </div>
         <h3>项目成果：</h3>
         <div class="description">
-          通过 iframe 的方式在 Cocos 插件中引入平台前端项目，可以通过 React +
-          Ant Design 进行开发，同时通过全局注入的方式保证可以使用 Cocos Plugin
-          API
+          通过 iframe 的方式在 Cocos 插件中引入平台前端项目，可以通过创建 npm
+          项目进行开发，同时通过全局注入的方式保证可以使用 Cocos Plugin API
         </div>
         <div class="description">
           利用连通图算法对依赖进行收集，处理了部分空依赖，比如缺失引用的组件，未被引用的节点等
+        </div>
+        <div class="description">
+          脚手架实现快速创建项目，快速接入 Cocos ，以及本地启动和运行插件的功能
         </div>
         <div class="description">
           将平台调试放到本地启动，可以在本地利用脚手架创建项目并调试
@@ -237,12 +245,12 @@
         <h2>Alita 活动管理平台</h2>
         <h3>项目描述：</h3>
         <div class="description">
-          主要提供给电商部门运营，用来创建商品营销活动的后台，有约百人 uv
+          主要是用来创建商品营销活动的后台，提供给电商部门的运营，有约百人 uv
         </div>
         <h3>技术栈：</h3>
         <div class="description">
-          使用 React + dva 技术栈，使用了 Ant Design 作为前端 UI 组件库。使用
-          Axios 作为请求库
+          使用 React + dva 技术栈，使用了 Ant Design 作为 UI 库。使用 Axios
+          作为请求库
         </div>
         <h3>负责内容：</h3>
         <div class="description">使用 JSON Schema 自定义渲染表格</div>
@@ -254,13 +262,14 @@
           使用JWT 进行简单的跨域认证，让用户可以访问到非核心内容
         </div>
         <h3>项目难点：</h3>
-        <div class="description">JSON Schema 的自定义渲染，以及联动渲染</div>
+        <div class="description">
+          如何使用 JSON Schema 的自定义渲染，让后端的数据直接渲染成表格
+        </div>
         <div class="description">表格内容渲染过多，拖慢加载速度和用户交互</div>
         <div class="description">用户上传的文件过大，上传也容易中断</div>
         <h3>项目成果：</h3>
         <div class="description">
-          使用JSON Schema
-          完成了把后端数据直接渲染成对应表格的能力，联动渲染可以反查
+          使用JSON Schema 完成了把后端数据直接渲染成对应表格的能力
         </div>
         <div class="description">
           页面使用虚拟滚动优化页面性能，让渲染出的表单更快速打开
@@ -274,8 +283,10 @@
     <footer>
       <h1>教育经历</h1>
       <div class="container">
-        <aside>内蒙古工业大学 物联网工程 本科 信息工程学院</aside>
-        <aside>2014.09 - 2018.07</aside>
+        <div class="description">
+          内蒙古工业大学 物联网工程 本科 信息工程学院
+        </div>
+        <div class="description">2014.09 - 2018.07</div>
       </div>
     </footer>
   </body>
