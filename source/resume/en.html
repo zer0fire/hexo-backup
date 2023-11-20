@@ -3,146 +3,298 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PIRATE KING</title>
+    <title>Wang-Meng Resume</title>
     <style>
-      html {
+      body {
         background-color: rgb(56, 56, 59);
         color: white;
       }
+      body,
       h1,
       h2,
       h3 {
         margin: 0;
       }
-      a {
-        color: rgb(141, 217, 191);
+      code {
+        background-color: #ddd;
+        border-radius: 4px;
+        padding: 5px 2px 2px 2px;
       }
-      main h1.title {
-        color: rgb(82, 156, 202);
-        /* border-bottom: 1px solid white; */
-        margin: 10px 5px;
+      body {
+        padding: 10px;
+      }
+      header h1 {
+        text-align: center;
         font-size: 20px;
+        margin-bottom: 3px;
       }
-      main .item {
-        display: list-item;
-        margin-left: 25px;
-      }
-      main .item::marker {
-        color: rgb(82, 156, 202);
+      header h2 {
+        text-align: center;
+        font-size: 16px;
       }
       header {
+        margin: 0px 0px 15px 0px;
+      }
+      aside,
+      section,
+      main {
+        margin-bottom: 15px;
+      }
+      aside h1,
+      section h1,
+      main h1,
+      footer h1 {
+        margin-bottom: 10px;
+      }
+      aside h1 {
+        border-left: 10px solid grey;
+        color: rgb(82, 156, 202);
+        border-bottom: 1px solid;
+        padding: 2px 0px 2px 10px;
+        font-size: 20px;
+      }
+      aside div.item {
+        display: list-item;
+        margin-left: 30px;
+        font-size: 15px;
+      }
+      section h1 {
+        border-left: 10px solid grey;
+        color: rgb(82, 156, 202);
+        border-bottom: 1px solid;
+        padding: 2px 0px 2px 10px;
+        font-size: 20px;
+      }
+      section h2,
+      section h3 {
+        font-size: 14px;
+      }
+      section .container {
         display: flex;
-        justify-content: center;
-        padding: 0px 15px;
+        justify-content: space-between;
       }
-      header .split {
-        color: black;
+      section div {
+        margin-bottom: 5px;
+        font-size: 15px;
       }
-      header .item {
-        margin-left: 10px;
-        margin-right: 10px;
+      main h1 {
+        border-left: 10px solid grey;
+        color: rgb(82, 156, 202);
+        border-bottom: 1px solid;
+        padding: 2px 0px 2px 10px;
+        font-size: 20px;
       }
-      .resume-name {
-        text-align: center;
+      main .project h2 {
+        font-size: 20px;
+        margin: 10px 0px 5px 0px;
       }
-      .exp,
-      .edu {
+      main .project h3 {
+        font-size: 18px;
+        margin: 5px;
+      }
+      main .project .description {
+        display: list-item;
+        margin-left: 30px;
+        font-size: 15px;
+      }
+      footer h1 {
+        border-left: 10px solid grey;
+        color: rgb(82, 156, 202);
+        border-bottom: 1px solid;
+        padding: 2px 0px 2px 10px;
+        font-size: 20px;
+      }
+      footer .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 0px 10px;
-      }
-      .exp h1,
-      .edu h1 {
-        font-size: 16px;
-        width: 30%;
-      }
-      .exp .tag,
-      .edu .tag {
-        width: 30%;
-        /* border-bottom: 1px solid; */
-        font-weight: bolder;
-        text-align: center;
-      }
-      .exp .period,
-      .edu .period {
-        width: 40%;
-        text-align: right;
-        display: flex;
-        justify-content: right;
-      }
-      .exp .item,
-      .edu .item {
-        width: 100%;
-      }
-      .period .location,
-      .period .time {
-        width: 50%;
+        padding: 0px 15px;
+        font-size: 15px;
       }
     </style>
   </head>
   <body>
-    <h1 class="resume-name">Wang Meng</h1>
     <header>
-      <div class="item"><a href="">LinkedIn</a></div>
-      <div class="split">|</div>
-      <div class="item">184-4707-3846</div>
-      <div class="split">|</div>
-      <div class="item"><a href="">site</a></div>
-      <div class="split">|</div>
-      <div class="item">email: hai@zer0fire.me</div>
-      <div class="split">|</div>
-      <div class="item"><a href="">GitHub</a></div>
+      <h1>Wang Meng</h1>
+      <h2>18447073846 | hai@zer0fire.me | Chengdu, China</h2>
     </header>
-    <main class="skills">
-      <h1 class="title">Skills</h1>
-      <div class="item">C#</div>
-      <div class="item">Azure</div>
-      <div class="item">Microservices</div>
-    </main>
-    <main class="experience">
-      <h1 class="title">Experience</h1>
-      <div class="exp">
-        <h1>Frontend Engineer</h1>
-        <div class="tag">Spark Education Group</div>
-        <div class="period">
-          <div class="time">07/2021 - Current</div>
+    <aside class="ability">
+      <h1>Skills</h1>
+      <div class="container">
+        <div class="item">
+          熟悉原生 JavaScript，理解原型、闭包、高阶、异步等概念，熟悉 ES
+          新特性， 熟悉使用 TypeScript 编写程序，了解其基本语法和常用类型约束
         </div>
-        <div class="item"><b>PRIATE KING</b></div>
-      </div>
-      <div class="exp">
-        <h1>Software Engineer</h1>
-        <div class="tag">Microsoft</div>
-        <div class="period">
-          <div class="location">Redmond, WA, USA</div>
-          <div class="time">07/2021 - Current</div>
+        <div class="item">
+          熟悉 React 的使用，了解生命周期函数和 Hooks 等概念，了解 Redux 和
+          React-Router
         </div>
-        <div class="item"><b>PRIATE KING</b></div>
+        <div class="item">
+          熟悉使用 Git 协同开发；熟悉使用 ESLint 和 Prettier 代码规范
+        </div>
+        <div class="item">
+          熟悉 Sass、Less 及类似的 CSS 预处理器，熟悉 Babel
+          编译代码，减少项目维护成本
+        </div>
+        <div class="item">
+          熟悉计算机网络的基本原理，熟悉 HTTP
+          协议的机制、常见请求头等，熟悉常见的浏览器资源缓存策略
+        </div>
+        <div class="item">掌握响应式布局、弹性布局、百分比自适应布局</div>
       </div>
-    </main>
-    <main class="education">
-      <h1 class="title">Education</h1>
-      <div class="edu">
-        <h1>Bachelor of IOT Engineering</h1>
-        <div class="tag">IMUT</div>
-        <div class="period">
-          <div class="location">Inner Mongolia, PRC</div>
-          <div class="time">09/2014 - 07/2018</div>
+    </aside>
+    <section class="experience">
+      <h1>Experience</h1>
+      <div class="container">
+        <h2>Spark Education Group,</h2>
+        <h3>2020.11 - Current</h3>
+      </div>
+      <div>Front-end Developer</div>
+      <div class="container">
+        <h2>Beijing Hank-Times Group</h2>
+        <h3>2019.05 - 2020.10</h3>
+      </div>
+      <div>Front-end Developer</div>
+      <div class="container">
+        <h2>Inner Mongolia YunKe Data Group</h2>
+        <h3>2018.05 - 2019.04</h3>
+      </div>
+      <div>Front-end Developer</div>
+    </section>
+    <main>
+      <h1>Projects</h1>
+      <div class="project">
+        <h2>Game Dreamworks Platform</h2>
+        <h3>Project Description:</h3>
+        <div class="description">
+          该项目是开发课件游戏的低代码开发平台，让教学老师能通过简单的拖拉拽，对现有的课件游戏模版模块进行二次开发，快速拼装课件
+        </div>
+        <h3>Technology Stack:</h3>
+        <div class="description">
+          使用 React 开发， UI 框架使用 Ant Design，使用 redux-toolkit
+          作为状态管理工具，使用 Cocos 作为可视层进行基础拖拉拽处理
+        </div>
+        <h3>Responsible content:</h3>
+        <div class="description">参与低代码项目页面开发</div>
+        <div class="description">对基础拖拽组件库二次开发和功能拓展</div>
+        <div class="description">
+          负责交付给教研老师的低代码模块、模板的开发
+        </div>
+        <div class="description">接入 sentry 监控前端页面质量</div>
+        <h3>Project difficulties:</h3>
+        <div class="description">如何抽象拖拽库，以及对拖拽库的扩展开发</div>
+        <div class="description">
+          把 Cocos 引擎嵌入到 Web 页面，并接入自定义物料库
+        </div>
+        <div class="description">
+          如何接入数据埋点，统计模板模块等物料使用频率
+        </div>
+        <div class="description">如何接入 sentry 平台用来统计和报告 bug</div>
+        <h3>Project results:</h3>
+        <div class="description">
+          参与将 Cocos 嵌入到浏览器中，让用户能够在网页中使用 Cocos
+          相关的引擎能力
+        </div>
+        <div class="description">
+          抽象出一套拖拽库，在公司低代码平台作为基建使用
+        </div>
+        <div class="description">减少 BUG 量 90% ，减少定位 BUG 时间</div>
+      </div>
+      <div class="project">
+        <h2>Game Factory Platform</h2>
+        <h3>Project Description:</h3>
+        <div class="description">
+          助力策划团队进行制作的配套⼯具平台，主要目的是方便开发 Cocos
+          游戏引擎的插件和接入其他工具平台
+        </div>
+        <h3>Technology Stack:</h3>
+        <div class="description">
+          使用 React 开发， UI 框架使用 Ant Design，使用 Cocos Plugin 和
+          Electron API
+        </div>
+        <h3>Responsible content:</h3>
+        <div class="description">开发 Cocos 插件工具，及对应的平台页面</div>
+        <div class="description">
+          参与对 Cocos 编辑器的扩展，接入前端工具平台、模块模板平台
+        </div>
+        <div class="description">
+          开发插件对应的发布工具及脚手架，并接入团队内开发的其他工具
+        </div>
+        <h3>Project difficulties:</h3>
+        <div class="description">
+          Cocos 内部 Plugin 无法引入前端项目，无法使用 npm 和其他库或者框架
+        </div>
+        <div class="description">
+          Electron 和 Cocos Editor 的交互文档缺失，ipc 协议无法直接调试
+        </div>
+        <div class="description">
+          如何利用 Electron 和 Cocos 的 API 来收集本地资源内空引用
+        </div>
+        <div class="description">
+          如何完善脚手架功能，实现从模板到插件的快速迭代
+        </div>
+        <h3>Project results:</h3>
+        <div class="description">
+          通过 iframe 的方式在 Cocos 插件中引入平台前端项目，可以通过创建 npm
+          项目进行开发，同时通过全局注入的方式保证可以使用 Cocos Plugin API
+        </div>
+        <div class="description">
+          利用连通图算法对依赖进行收集，处理了部分空依赖，比如缺失引用的组件，未被引用的节点等
+        </div>
+        <div class="description">
+          脚手架实现快速创建项目，快速接入 Cocos ，以及本地启动和运行插件的功能
+        </div>
+        <div class="description">
+          将平台调试放到本地启动，可以在本地利用脚手架创建项目并调试
         </div>
       </div>
-    </main>
-    <main class="project">
-      <h1 class="title">Project</h1>
-      <div class="item">COLORMAN</div>
-      <div class="item">SPIKE</div>
-    </main>
-    <main class="others">
-      <h1 class="title">Others</h1>
-      <div class="item">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam natus
-        optio at placeat animi culpa, accusantium fugiat distinctio cum, nulla
-        ea unde aperiam pariatur mollitia neque expedita, ipsa dolor sint?
+      <div class="project">
+        <h2>Alita Management Platform</h2>
+        <h3>Project Description:</h3>
+        <div class="description">
+          主要是用来创建商品营销活动的后台，提供给电商部门的运营，有约百人 uv
+        </div>
+        <h3>Technology Stack:</h3>
+        <div class="description">
+          使用 React + dva 技术栈，使用了 Ant Design 作为 UI 库。使用 Axios
+          作为请求库
+        </div>
+        <h3>Responsible content:</h3>
+        <div class="description">使用 JSON Schema 自定义渲染表格</div>
+        <div class="description">对自定义渲染的页面进行一定的性能优化</div>
+        <div class="description">
+          对用户上传文件进行管理，并传送到后端进行保存
+        </div>
+        <div class="description">
+          使用JWT 进行简单的跨域认证，让用户可以访问到非核心内容
+        </div>
+        <h3>Project difficulties:</h3>
+        <div class="description">
+          如何使用 JSON Schema 的自定义渲染，让后端的数据直接渲染成表格
+        </div>
+        <div class="description">表格内容渲染过多，拖慢加载速度和用户交互</div>
+        <div class="description">用户上传的文件过大，上传也容易中断</div>
+        <h3>Project results:</h3>
+        <div class="description">
+          使用JSON Schema 完成了把后端数据直接渲染成对应表格的能力
+        </div>
+        <div class="description">
+          页面使用虚拟滚动优化页面性能，让渲染出的表单更快速打开
+        </div>
+        <div class="description">
+          实现了大文件上传，并且可以让大文件断点续传
+        </div>
+        <div class="description">提高页面加载效率，图片懒加载</div>
       </div>
     </main>
+    <footer>
+      <h1>Education</h1>
+      <div class="container">
+        <div class="description">
+          InnerMongolia University of Technology, Major Internet of Things
+        </div>
+        <div class="description">2014.09 - 2018.07</div>
+      </div>
+    </footer>
   </body>
 </html>
