@@ -8,9 +8,9 @@ tags:
 
 `React` is a web UI library that published by meta group, and it is used to build you own web page more easily and quickly
 
-# Built-in React Hooks
+# Built-in `React` Hooks
 
-Hooks let you use different React features from your components. You can either use the built-int Hooks of combine them to build your own. This page lists all built-int hooks in React
+Hooks let you use different `React` features from your components. You can either use the built-int Hooks of combine them to build your own. This page lists all built-int hooks in `React`
 
 ## State Hooks
 
@@ -53,8 +53,8 @@ function Button() {
 
 ## Ref hooks
 
-Ref hooks let a component hold some information that isn't used for rendering, like a DOM node or a timeout ID. Unlike with state, updating a ref does not re-render your component, Refs are an "escape hatch"[逃生口] from the React paradigm[范式]
-. They are useful when you need to work with non-React systems, such as the built-int browser APIs, like Canvas APIs, Web socket APIs
+Ref hooks let a component hold some information that isn't used for rendering, like a DOM node or a timeout ID. Unlike with state, updating a ref does not re-render your component, Refs are an "escape hatch"[逃生口] from the `React` paradigm[范式]
+. They are useful when you need to work with non-`React` systems, such as the built-int browser APIs, like Canvas APIs, Web socket APIs
 
 `useRef` declares a ref. You can hold any value in it, but most often it's used to hold a DOM node.
 
@@ -72,19 +72,19 @@ function Form() {
 
 ## Effect Hooks
 
-Effect hooks let a component connect to and synchronize with external systems. This includes dealing the network, browser DOM, animations, widgets written using a different UI library, and other non-React code
+Effect hooks let a component connect to and synchronize with external systems. This includes dealing the network, browser DOM, animations, widgets written using a different UI library, and other non-`React` code
 
-`useEffect` connects a component to an external system, runs side effect or any other function. Effect hooks are an "escape hatch" from the React paradigm. (asynchronous)
+`useEffect` connects a component to an external system, runs side effect or any other function. Effect hooks are an "escape hatch" from the `React` paradigm. (asynchronous)
 
 Don't use Effects to orchestrate the data flow of your application. If you're not interacting with an external system, you might not need an Effect
 
 `useLayoutEffect` fires before the browser repaints the screen, You can measure layout here(synchronous)
 
-`useInsertionEffect` fires before React make changes to the DOM. Libraries can insert dynamic CSS here
+`useInsertionEffect` fires before `React` make changes to the DOM. Libraries can insert dynamic CSS here
 
 ## Performance Hooks
 
-a common way tp optimize re-rendering performance is to skip unnecessary work. For example you can tell React to reuse a cached calculation or to skip a re-render if the data has not changed since the previous render
+a common way tp optimize re-rendering performance is to skip unnecessary work. For example you can tell `React` to reuse a cached calculation or to skip a re-render if the data has not changed since the previous render
 
 To skip calculation and unnecessary re-rendering, use one of these Hooks:
 
@@ -112,7 +112,7 @@ function TodoList({ todos, tab, theme }) {
 
 These Hooks are mostly useful to library authors and aren't commonly used in the application code
 
-`useDebugValue` lets you customize the label React DevTools displays for your custom Hook
+`useDebugValue` lets you customize the label `React` DevTools displays for your custom Hook
 
 `useId` lets a components associate a unique ID with itself, Typically used with accessibility APIs
 
@@ -126,7 +126,7 @@ What is the difference between Meta-framework and library
 
 ## State Hooks
 
-`useState` is a React Hook that lets you add a state variable to your component
+`useState` is a `React` Hook that lets you add a state variable to your component
 
 ```js
 import { useState } from "react";
@@ -143,7 +143,7 @@ function MyComp() {
 }
 ```
 
-`useReducer` is React hook that lets you add a reducer to your component
+`useReducer` is `React` hook that lets you add a reducer to your component
 
 ```js
 function reducer(state, action) {}
@@ -161,10 +161,10 @@ function MyComp() {
 
 These two State hooks are all only update the state variable for the next render
 
-`useContext` is a React hooks that lets you read and subscribe to context from your component
+`useContext` is a `React` hooks that lets you read and subscribe to context from your component
 
 ```js
-const ThemeContext = React.createContext(null);
+const ThemeContext = `React`.createContext(null);
 
 function MyApp() {
   const [theme, setTheme] = useState("light");
@@ -350,7 +350,7 @@ Context
 `useContext`
 
 Reference
-`useRef` export a ref value, not mutable, and it can't trigger rerender in React environment
+`useRef` export a ref value, not mutable, and it can't trigger rerender in `React` environment
 `useImperativeHandle` export customize ref
 
 Side Effect
@@ -366,5 +366,5 @@ Optimization
 
 Other
 `useId` generate id
-`useDebugValue` React devtools, use it set value
+`useDebugValue` `React` devtools, use it set value
 `useSyncExternalStore` subscribe a external state store
