@@ -99,7 +99,7 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: fluid
 
-# zip image
+# Optimize: zip image
 all_minifier: true
 
 # Deployment

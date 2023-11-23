@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Page</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      body {
+        --circle-size: 30px;
+        /* background-color: #000; */
+      }
+      .circle {
+        width: var(--circle-size);
+        height: var(--circle-size);
+        /* background: #f5f5f5; */
+        border-radius: var(--circle-size);
+        position: absolute;
+        background: #f5f5f5;
+        z-index: 100;
+        pointer-events: none;
+        opacity: 1;
+        transition: opacity 0.3s ease-out;
+        mix-blend-mode: difference;
+        filter: grayscale(1);
+      }
+      /* .circle .visible {
+        opacity: 1;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+
+    <img src="https://temp.im/123x456" />
+    <img src="https://temp.im/123x456" />
+    <img src="https://temp.im/123x456" />
+  </body>
+  <script>
+    const circle = document.querySelector(".circle");
+    const body = document.querySelector("body");
+    // circle.getClientRects();
+    window.addEventListener("mousemove", (e) => {
+      circle.style.transform = `translate(${e.clientX - body.clientWidth}px, ${
+        e.clientY - body.clientHeight
+      }px)`;
+      //   console.log(`translate(${e.clientX}, ${e.clientY})`);
+    });
+    // window.addEventListener("mouseleave", (e) => {
+    //   circle.style.opacity = 0;
+    // });
+    // window.addEventListener("mouseenter", (e) => {
+    //   circle.style.opacity = 255;
+    // });
+  </script>
 </html>
