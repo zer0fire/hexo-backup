@@ -40,9 +40,11 @@
     const body = document.querySelector("body");
     // circle.getClientRects();
     window.addEventListener("mousemove", (e) => {
-      circle.style.transform = `translate(${e.clientX - body.clientWidth}px, ${
-        e.clientY - body.clientHeight
-      }px)`;
+      //   circle.style.transform = `translate(${e.clientX - body.clientWidth}px, ${
+      //     e.clientY - body.clientHeight
+      //   }px)`;
+      circle.style.top = `${e.clientY - 20}px`;
+      circle.style.left = `${e.clientX - 20}px`;
       //   console.log(`translate(${e.clientX}, ${e.clientY})`);
     });
     // window.addEventListener("mouseleave", (e) => {

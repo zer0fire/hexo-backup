@@ -8,7 +8,7 @@
   height: var(--circle-size);
   /* background: #f5f5f5; */
   border-radius: var(--circle-size);
-  position: absolute;
+  position: fixed;
   background: #f5f5f5;
   z-index: 100;
   pointer-events: none;
