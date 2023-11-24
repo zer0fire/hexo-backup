@@ -14,7 +14,7 @@
         height: var(--circle-size);
         /* background: #f5f5f5; */
         border-radius: var(--circle-size);
-        position: absolute;
+        position: fixed;
         background: #f5f5f5;
         z-index: 100;
         pointer-events: none;
@@ -38,13 +38,11 @@
   <script>
     const circle = document.querySelector(".circle");
     const body = document.querySelector("body");
+    const rect = circle.getBoundingClientRect();
     // circle.getClientRects();
     window.addEventListener("mousemove", (e) => {
-      //   circle.style.transform = `translate(${e.clientX - body.clientWidth}px, ${
-      //     e.clientY - body.clientHeight
-      //   }px)`;
-      circle.style.top = `${e.clientY - 20}px`;
-      circle.style.left = `${e.clientX - 20}px`;
+      circle.style.top = `${e.clientY - rect.height / 2}px`;
+      circle.style.left = `${e.clientX - rect.width / 2}px`;
       //   console.log(`translate(${e.clientX}, ${e.clientY})`);
     });
     // window.addEventListener("mouseleave", (e) => {

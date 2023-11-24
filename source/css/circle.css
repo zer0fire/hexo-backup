@@ -16,4 +16,6 @@
   transition: opacity 0.3s ease-out;
   mix-blend-mode: difference;
   filter: grayscale(1);
+  top: 0;
+  left: 0;
 }
