@@ -39,17 +39,17 @@
     const circle = document.querySelector(".circle");
     const body = document.querySelector("body");
     const rect = circle.getBoundingClientRect();
-    // circle.getClientRects();
     window.addEventListener("mousemove", (e) => {
       circle.style.top = `${e.clientY - rect.height / 2}px`;
       circle.style.left = `${e.clientX - rect.width / 2}px`;
-      //   console.log(`translate(${e.clientX}, ${e.clientY})`);
     });
-    // window.addEventListener("mouseleave", (e) => {
-    //   circle.style.opacity = 0;
-    // });
-    // window.addEventListener("mouseenter", (e) => {
-    //   circle.style.opacity = 255;
-    // });
+
+    const intro = document.createElement("div");
+    intro.classList = ["intro"];
+
+    intro.innerHTML = `
+<h1>Alex Wang</h1>
+A Software Developer who always wants to be better in tech and life.
+`;
   </script>
 </html>
