@@ -1,8 +1,12 @@
 index:
   slogan:
-    enable: true,
+    enable: false,
     text: To be, or not to be? it is a question.
 navbar:
   blog_title: "zer0fire"
-custom_js: /js/circle.js
-custom_css: /css/circle.css
+custom_js:
+  - /js/circle.js
+  - /js/intro.js
+custom_css:
+  - /css/circle.css
+  - /css/intro.css
