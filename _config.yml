@@ -100,7 +100,7 @@ ignore:
 theme: fluid
 
 # Optimize: zip image
-all_minifier: true
+all_minifier: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

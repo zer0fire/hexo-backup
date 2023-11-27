@@ -1,4 +1,21 @@
 .intro {
+  color: white;
+  text-align: left;
 }
-.intro h2 {
+.intro h1 {
+  margin-bottom: 20px;
+}
+.intro h3 {
+  font-size: 22px;
+  margin-bottom: 60px;
+}
+.intro a {
+  /* background: #eee; */
+  display: inline-block;
+  color: white;
+  border: 1px white solid;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 20px;
 }

@@ -8,6 +8,7 @@
       body {
         --circle-size: 30px;
         /* background-color: #000; */
+        background-color: rgb(22, 29, 54);
       }
       .circle {
         width: var(--circle-size);
@@ -26,14 +27,17 @@
       /* .circle .visible {
         opacity: 1;
       } */
+      .intro {
+        color: white;
+      }
     </style>
   </head>
   <body>
     <div class="circle"></div>
 
+    <!-- <img src="https://temp.im/123x456" />
     <img src="https://temp.im/123x456" />
-    <img src="https://temp.im/123x456" />
-    <img src="https://temp.im/123x456" />
+    <img src="https://temp.im/123x456" /> -->
   </body>
   <script>
     const circle = document.querySelector(".circle");
@@ -46,10 +50,11 @@
 
     const intro = document.createElement("div");
     intro.classList = ["intro"];
+    body.appendChild(intro);
 
     intro.innerHTML = `
 <h1>Alex Wang</h1>
-A Software Developer who always wants to be better in tech and life.
+<h2>A Software Developer who always wants to be better in tech and life.</h2>
 `;
   </script>
 </html>
