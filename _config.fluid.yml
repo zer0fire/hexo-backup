@@ -16,3 +16,16 @@ fun_features:
     typeSpeed: 70 # 打印速度
     cursorChar: "_" # 游标字符
     loop: false # 是否循环播放效果
+about:
+  avatar: /img/logo-manual.png
+  about:
+  icons:
+    - {
+        class: "iconfont icon-github-fill",
+        link: "https://github.com/zer0fire",
+        tip: "GitHub",
+      }
+    # - { class: 'iconfont icon-douban-fill', link: 'https://douban.com', tip: '豆瓣' }
+    # - { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.png' }
+  name: "Alex Wang"
+  intro: "To be or not to be, it is a question."
