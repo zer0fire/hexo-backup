@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wasm-Game-Of-life</title>
+    <style>
+      body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* width: 100%;
+        height: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      canvas {
+        border: 1px solid;
+      }
+      .message1,.message2 {
+        color: black;
+        background-color: #fff;
+        white-space: pre;
+        font-family: monospace;
+        position: absolute;
+        top: 40%;
+        left: 30%;
+      }
+      #wasm {
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+      #origin {
+        position: fixed;
+        left: 0;
+        top: 30px;
+      }
+      #origin-canvas{
+
+      }
+      #wasm-canvas {
+
+      }
+      .container {
+        position: relative;
+      }
+      .tag {
+        position: absolute;
+        background: #fff;
+        top: 5px;
+        left: 5px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <pre id="game-of-life-canvas"></pre> -->
+    <!-- <button id="wasm">wasm</button>
+    <button id="origin">origin</button> -->
+    <!-- <canvas id="game-of-life-canvas"></canvas> -->
+    <div class="container">
+      <span class="tag">js</span>
+      <canvas id="origin-canvas"></canvas>
+      <div class="message1"></div>
+    </div>
+    <div class="container">
+      <span class="tag">wasm</span>
+      <canvas id="wasm-canvas"></canvas>
+      <div class="message2"></div>
+    </div>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
