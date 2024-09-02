@@ -4,6 +4,7 @@ index:
     # - text: "To be or not to be, it is a question"
 navbar:
   blog_title: "zer0fire"
+custom_head: '<link rel="shortcut icon" href="/img/logo-manual.png"><link rel="icon" type="/img/logo-manual.png" href="">'
 custom_js:
   - /js/circle.js
   - /js/intro.js

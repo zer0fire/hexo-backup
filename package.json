@@ -8,6 +8,7 @@
     "deploy": "hexo deploy",
     "server": "hexo server",
     "reserver": "hexo clean && hexo generate && hexo server",
+    "one-server": "npm run clean && npm run build && npm run server",
     "one-deploy": "npm run clean && npm run build && npm run deploy"
   },
   "hexo": {
