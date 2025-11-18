@@ -6,8 +6,8 @@ hexo.extend.filter.register("theme_inject", function (injects) {
   //     { cache: true },
   //     -1
   //   );
-  //   injects.footer.raw(
-  //     "default",
-  //     '<script async src="https://xxxxxx" crossorigin="anonymous"></script>'
-  //   );
+  injects.bodyEnd.raw(
+    "rainbow-kit-script",
+    '<script type="module" src="./demo/rainbow/assets/index-D0sDB4-R.js" crossorigin></script>'
+  );
 });

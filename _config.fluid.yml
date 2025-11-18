@@ -8,6 +8,8 @@ custom_head: '<link rel="shortcut icon" href="/img/logo-manual.png"><link rel="i
 custom_js:
   - /js/circle.js
   - /js/intro.js
+  - /js/react-root.js
+  # - /js/assets/index-CnSCkhfo.js
 custom_css:
   - /css/circle.css
   - /css/intro.css
